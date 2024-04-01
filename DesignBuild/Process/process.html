@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Process</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&family=Roboto:wght@400;500;700&display=swap');
+
+* {
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+body {
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* Nav bar css */
+ .nav-bar{
+    width:100%;
+    height:174px;
+    background-color: #1B5A67;
+    position: absolute;
+    z-index: 1;
+ }
+ .nav-bar .nav-bar-items {
+  display:flex;
+ }
+
+ /* Dropdown CSS */
+ 
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  transition-delay: 0.2s;
+}
+.dropdown .dropbtn {
+  background: transparent;
+  border: none;
+  list-style-type: none;
+  letter-spacing: 2px;
+  font-weight: 800;
+  transition-delay: 0.2s;
+  font-size: 11px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color:  #1B5A67;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  
+}
+
+.dropdown-content a:hover {
+  color: #fffdfdce;
+  transition-delay: 0.2s ease;
+  background-color:  #1B5A67;
+}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {
+  background-color:  #1B5A67;
+  color: #fffdfdce;
+  
+}
+
+
+/* drop down completed*/
+ .nav-bar .logo {
+    width:40%;
+    margin-left: 25px;
+ }
+ .nav-bar .logo .logo-img {
+    width:45%;
+    height:100%;
+    padding:30px 40px;
+    filter: brightness(800%);
+ }
+ .nav-bar .nav-items {
+    width:60%;
+
+ }
+ .nav-bar .nav-items .list-items {
+    display:flex;
+    flex-flow: row;
+    height:100%;
+    justify-content: end;
+    letter-spacing: 1.5px;
+    vertical-align: middle;
+    align-items: center;
+ }
+ .nav-bar .nav-items .list-items .nav-list-items {
+    list-style-type: none;
+    letter-spacing: 2px;
+    font-weight: 800;
+    padding-right: 40px;
+    font-size: 11px;
+ }
+ .nav-bar .nav-items .list-items .nav-list-items .nav-list-items-link {
+    text-decoration: none;
+    color:#fff;
+    text-transform: uppercase;
+   
+
+ }
+ .nav-bar .nav-items .list-items .nav-list-items .nav-list-items-link:hover {
+    color: #fffdfdce;
+    transition-delay: 0.2s ease;
+ }
+
+
+ /* Nav bar css end */
+ 
+        .main1 h1{
+
+            color: white;
+            font-size: 40px;
+            font-weight: 600;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            margin-top: -800px;
+            margin-left: 500px;
+            margin-bottom: 900px;
+        }
+        .main1 h4{
+            color: white;
+            font-size: 20px;
+            font-weight: 600;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            margin-left: 600px;
+            margin-top: -880px;
+            margin-bottom: 600px;
+        }
+        .main1 p{
+            color: white;
+            font-family: italic;
+            font-weight: 600;
+            margin-left: 300px;
+            margin-top: -550px;
+            margin-right: 100px;
+            font-size: 20px;
+
+
+        }
+        .main1 h3{
+         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+         font-weight: 600;
+         font-size: 20px;
+         color: white;
+         margin-left: 500px;
+         margin-bottom: 500px;
+        }
+       .wid1 img{
+    margin-top: 80px;
+    margin-left: 150px;
+    width: 400px;
+    height: 300px;
+     }
+     .main2 h4{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    margin-top: -300px;
+    margin-left: 600px;
+}
+.main2 h1{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 40px;
+    margin-top: 10px;
+    margin-left: 600px;
+}
+.main2 p{
+    margin-left: 600px;
+    font-style: italic;
+    font-weight: 600;
+}
+.wid2 img{
+    margin-top: 100px;
+    margin-left: 800px;
+    width: 400px;
+    height: 300px;
+     }
+     .main3 h1{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 40px;
+    margin-top: 10px;
+    margin-left: 430px;
+}
+.main3 h4{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    margin-top: -290px;
+    margin-left: 680px;
+}
+.main3 p{
+    margin-left: 200px;
+    margin-right: 500px;
+    font-style: italic;
+    font-weight: 600;
+}
+.wid3 img{
+    margin-top: 100px;
+    margin-left: 100px;
+    width: 400px;
+    height: 300px;
+}
+.main4 h4{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    margin-top: -290px;
+    margin-left: 530px;
+
+}
+.main4 h1{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 40px;
+    margin-left: 530px;
+
+}
+.main4 p{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: italic;
+    font-weight: 600;
+    margin-left: 530px;
+}
+.wid4 img{
+    margin-top: 100px;
+    margin-left: 800px;
+    width: 400px;
+    height: 300px;
+}
+.main5 h4{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    margin-top: -300px;
+    margin-left:670px;
+}
+.main5 h1{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 40px;
+    margin-left: 350px;
+}
+.main5 p{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: italic;
+    font-weight: 600;
+    margin-left:170px ;
+    margin-right: 500px;
+}
+.wid5 img{
+    width: 400px;
+    height: 300px;
+    margin-left: 100px;
+    margin-top: 100px;
+}
+.main6 h4{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    margin-top: -300px;
+    margin-left:530px;
+}
+.main6 h1{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 40px;
+    margin-left: 530px ;
+}
+.main6 p{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: italic;
+    font-weight: 600;
+    margin-left:530px ;
+}
+.text{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(38, 38, 99);
+}
+.main7 h1{
+    color: white;
+    font-size: 40px;
+    font-style: italic;
+    font-weight: 600;
+    margin-left: 250px;
+    padding-top: 50px;
+    margin-top: 10%;
+
+}
+.main7 h4{
+    color: white;
+    font-weight: bold;
+    margin-left: 400px;
+    padding-bottom: 75px;
+}
+.text1{
+    background-color: white;
+}
+.main8 h1{
+    padding-left: 50px;
+    padding-top: 20px;
+    font-style: italic;
+    color: cadetblue;
+    font-size: 40px;
+}
+.main8 p{
+    padding-left: 50px;
+    padding-right:500px;
+
+}
+.span1{
+    font-size: 15px;
+    padding-left: 150px;
+    font-weight: bold;
+    padding-top: 20px;
+    letter-spacing: 3px;
+}
+.p1{
+  padding-left: 300px;
+}
+.p2{
+    padding-left: 400px;
+}
+.span2{
+    font-size: 15px;
+    padding-left:150px ;
+    font-weight: bold;
+    padding-top: 20px;
+    letter-spacing: 3px;
+}
+.p4{
+    padding-left: 300px;
+}
+.p5{
+    padding-left:350px ;
+}
+.span3{
+    font-size: 15px;
+    padding-left: 150px;
+    font-weight: bold;
+    padding-top: 40px;
+    letter-spacing: 3px;
+}
+.p7{
+    padding-left: 290px;
+}
+.p8{
+    padding-left: 395px;
+
+}
+.font{
+    background-color: grey;
+}
+.main9 p{
+    margin-left: 40px;
+    margin-right: 500px;
+    
+}
+.main9 h2{
+    margin-left:40px ;
+}
+.main-cnt7{
+    background-color: rgb(58, 107, 96);
+    width: 99vw;
+    height: 60vh;
+}
+.main-cnt7 img{
+    width: 13vw;
+    height: 20vh;
+    margin-left: 80%;
+    margin-top: -30%;
+}
+.main-cnt3{
+    background-color: rgb(190, 184, 171);
+    height: 30vh;
+}
+.main-cnt3 button{
+    border: none;
+    margin-left: 33%;
+    padding: 1%;
+    
+}
+.main-cnt3 button:hover{
+    background-color: black;
+    color: white;
+}
+.main-cnt4{
+    background-color: rgb(177,177,248);
+    height: 55vh;
+}
+.main-cnt4 p{
+    font-size: 2cap;
+    padding: 3%;
+    margin-left: 5%;
+}
+.main-cnt4 img{
+    width: 25vw;
+    height: 50vh;
+    margin-top: -20%;
+    margin-left: 74.3%;
+}
+    </style>
+</head>
+<!--navbar section-->
+<nav class="nav-bar">
+    <div class="nav-bar-items">
+       <div class="logo">
+           <a href="/Home/home.html"><img class="logo-img" src="https://images.squarespace-cdn.com/content/v1/5266f2a8e4b05199f0597be1/1580338846675-PAB38AAQZI33E2YH10GK/BH+Design+Build%2C+Pennsylvania+Design+Build+Contractor%2C+Home+Building+Remodeling+Team%2C+Top+Contractors+in+Pennsylvania%2C+Best+Westchester+Contractor%2C+Luxury+Home+Remodel+in+Morgantown+PA3.png?format=1500w" alt="Logo Image"></a>
+       </div>
+       <div class="nav-items" >
+           <ul class="list-items">
+
+           
+               <li class="nav-list-items"><div class="dropdown">
+                <button class="dropbtn nav-list-items-link">services</button>
+                <div class="dropdown-content">
+                  <a href="/Service/design.html" class="nav-list-items-link">custom homes</a>
+                  <a href="/HomeTransformation/HomeTransformation.html" class="nav-list-items-link">home transformations</a>
+                  <a href="/Kitchen/kitchen.html" class="nav-list-items-link">kitchens</a>
+                </div>
+              </div></li>
+               <li class="nav-list-items"><a href="/Process/process.html" class="nav-list-items-link">process</a></li>
+               <li class="nav-list-items"><a href="/Portfolio/portfolio.html" class="nav-list-items-link">portfolio</a></li>
+               <li class="nav-list-items"><a href="/OurTeam/ourteam.html" class="nav-list-items-link">our team</a></li>
+               <li class="nav-list-items"><a href="/Contact/contact.html" class="nav-list-items-link">contact</a></li>     
+           </ul>
+       </div>
+    </div>
+  </nav>
+  <!--Nav bar secrtion end-->
+<body style="background-color: rgb(189, 187, 186);">
+    <div class="wid">
+     <img src="https://images.squarespace-cdn.com/content/v1/5266f2a8e4b05199f0597be1/1664600299115-PRL1EYC3DS36N3SS0EO8/BH+Design+Build+West+Chester+Pennsylvania+Contractor+Most+Reliable+Home+Builders+Best+Contractor7933.jpg?format=1500w" alt="" width="100%">
+     <div class="main1">
+       <h1>From Start to Finish.</h1>
+       <h4>AND BEYOND</h4>
+       <P>The decision to change your home represents a change happening in your life and family. We want to honor that by ensuring your experience is catered to what you envision. <br> <br>
+        We’re not just another construction company. Our signature design build experience is thoughtful, personalized, and helps take the headache out of remodeling. We’ll work together from start to finish, listening to your dreams for your project, designing it to fit your budget, then building it to your expectations. </P>
+       <h3>DREAM IT. DESIGN IT. BUILD IT. LIVE IT.</h3>
+       
+     </div>
+    </div>
+    <div class="wid1">
+    <img src="https://images.squarespace-cdn.com/content/v1/5266f2a8e4b05199f0597be1/e2585606-0e0d-49e0-8ac0-bf735e64ef49/STEP+ONE+IMAGE.png?format=750w" alt="">
+     <div class="main2">
+      <h4>STEP ONE</h4>
+      <h1>Lets Get Acquainted</h1>
+      <p>We’d love to get connected with you! Please submit your contact info and a few details about your project, and we’ll send you our 10-minute Client Survey to fill out. Once we receive that, we’ll give you a call to discuss your needs and vision and make sure we’re a good fit for each other. We’ll schedule a time to come out, sit down together to discuss the project scope, budget, and timeline. <br> <br>
+
+        Based on our initial meeting, we’ll develop a budget, rough scope of work, and lay out the upcoming design process. </p>
+     </div>
+    </div>
+    <div class="wid2">
+    <img src="https://images.squarespace-cdn.com/content/v1/5266f2a8e4b05199f0597be1/a4358178-5f84-46a6-b01d-34df40c81fd5/STEP+TWO+IMAGE+HOFFER+DRAFTING+INLAY.png?format=750w" alt="">
+    <div class="main3">
+     <h4>STEP TWO</h4>
+     <h1>The Design Details</h1>
+     <p>With a signed Design Agreement under way, our design team will visit you to dig into the details of your project and evaluate your existing space and conditions. <br> <br>
+
+        We’ll work with you to come up with a structural design you love using renderings, layouts, and elevations for you to visualize your new space. <br> <br>
+        
+        At your Design Walk-Through, we’ll make sure we’re all on the same page as we get ready to sign your Construction Agreement.</p>
+    </div>
+    </div>
+    <div class="wid3">
+     <img src="https://images.squarespace-cdn.com/content/v1/5266f2a8e4b05199f0597be1/fd580f11-5356-4ee6-8f44-4e577eadaec9/STEP+THREE+IMAGE+BHDB-29.jpg?format=750w" alt="">
+     <div class="main4">
+    <h4>STEP THREE</h4>
+    <h1>The Pretty Stuff</h1>
+    <p>This is the fun part! After all the construction talk, now we get to dig into making your home yours. At our Selection Gallery, we’ll guide you through every choice that determines the look and feel of your home. Colors, upgrades, styles, oh my! <br> <br>
+
+        You’ll be able to see, feel, touch, and choose all the elements to personalize your home. Our designers will walk you step-by-step through the entire process to help bring your style home.</p>
+     </div>
+    </div>
+    <div class="wid4">
+      <img src="https://images.squarespace-cdn.com/content/v1/5266f2a8e4b05199f0597be1/1584056048103-0YX6Y5TZ6GNLYSBAIR2F/BH+Design+Build%2C+Berks+Homes%2C+Berks+County+Contractor%2C+Chester+County+Design+Build+Contractor%2C+Best+Southeast+Pennsylvania+Contractor%2C+Pennsylvania+Design+Build+Construction+Day.JPG?format=750w" alt=""/>
+      <div class="main5">
+       <h4>STEP FOUR</h4>
+       <h1>Down to Nuts and Bolts</h1>
+       <p>We’re ready to start the pre-construction phase! We will create final construction drawings including structural engineering as needed and complete the permitting process. <br> <br>
+
+        At our Pre-Construction Walk-Through, we’ll get together to finalize details and get ready to kick off construction! We’ll discuss the project sequence, key dates, production schedule, and review the scope of work.
+        
+        </p>
+      </div>
+    </div>
+    <div class="wid5" >
+   <img src="https://images.squarespace-cdn.com/content/v1/5266f2a8e4b05199f0597be1/7b00c72b-7fb2-4770-801d-07a2bb45d646/STEP+FIVE+IMAGE+2B6A4919.jpg?format=750w" alt="">
+    <div class="main6">
+     <h4>STEP FIVE</h4>
+     <h1> The Full Package</h1>
+     <p>We know big projects can seem overwhelming. Nothing is more important to us than you being confident you hired the right company for your job. We want you to know that being a “design/build” company means that we handle everything. Under one roof. As a team. We’ve got it all covered! We use client-friendly construction software to keep you up to speed on everything from scheduling to selections to the final walk-through, so you’ll never feel lost along the way. <br> <br>
+
+        We’re proud to have worked with existing clients on repeat projects time and time again, in turn creating lasting relationships. There’s no greater compliment than being invited back into your home to continue to make it yours. <br> <br>
+        
+        We’re with you for the long haul!</p>
+    </div>
+    </div>
+    <div class="text">
+    <div class="main7">
+     <h1>When clients come first, happines always follows.</h1><br>
+     <button style="padding: 1%; border: none; margin-left: 34%; margin-bottom: 5%;background-color: black;color: white;">SEE THE RESULT OF OUR DESIGN BUILD PROCESS</button>
+    </div>
+    </div>
+    <br>
+    <br>
+    <div class="text1">
+    <div class="main8">
+    <h1>Selection Gallery</h1>
+    <p>Our 4,000 sqft. on-site selection gallery saves you precious time by providing design options under one roof. This is often the most exciting and overwhelming piece of the process for people. Our experts will guide you step by step, helping you choose options that not only compliment your taste, but stay within your budget.
+
+    </p>
+    <div class="span1">
+    <span class="p"> CABINETS</span>
+    <span class="p1">COUNTERS</span>
+    <span class="p2">TITLE</span>
+    </div>
+    <br>
+
+    <div class="span2">
+        <span class="p3">FLOORING</span>
+        <span class="p4"> BRICK & STONE</span>
+        <span class="p5">LIGHTING</span>
+    </div>
+    <div class="span3">
+        <span class="p6">HARDWARE</span>
+         <span class="p7"> MILLWORK</span>
+         <span class="p8">CUSTOM FINISH</span>
+    </div>
+    </div>
+    </div>
+    <br>
+    
+<div class="main-cnt4">
+<p>“We could not be happier! From start to finish, working with BH was an absolute<br> pleasure. The entire team are professionals in every sense of the word. We have all<br> heard those nightmare remodeling stories. You can put those fears aside when you <br>decide to do a project with BH Design. Build. They are extremely proactive, cover all the<br> bases up front, and if an obstacle arises, they are on it. As the saying goes, "you get<br> what you pay for." These guys are worth every penny.”</p>
+    <img src="https://images.squarespace-cdn.com/content/v1/5266f2a8e4b05199f0597be1/1581114311683-E8HYJLU59WENJZBU7ALH/Services-Testimonial-Pattern.png?format=500w">
+</div>
+<div class="main-cnt3">
+    <h2 style="padding: 4%;margin-left: 25%;color: white;">Want to love your home<i> this</i> much?</h2>
+    <button><b>START DESIGNING YOUR DREAM HOME TODAY</b></button>
+</div>
+
+
+
+
+    <div class="main-cnt7">
+        <h4 style="color: white; font-size: x-large; padding: 5%;">About Us<br><br>
+          <p style="color: white; font-size: small;">WHY WE’RE DIFFERENT</p>
+          <p style="color: white; font-size: small;">SEE OUR WORK</p>
+          <p style="color: white; font-size: small;">WHAT WE OFFER</p></h4>
+        <h4 style="margin-left: 23%; margin-top: -14%;font-size: x-large; color: white;">Connect</h4>
+          <p style="color: white; font-size: small;margin-left: 23%;margin-top: 2%;">INSTAGRAM</p>
+          <p style="color: white; font-size: small;margin-left: 23%;">FACEBOOK</p>
+          <p style="color: white; font-size: small;margin-left: 23%;">EMAIL</p>
+        <h4 style="margin-left: 37%; margin-top: -9%;font-size: x-large; color: white;">Info</h4>
+        <p style="color: white; font-size: small;margin-left: 37%;margin-top: 2%;">PRESS + AWARDS</p>
+        <p style="color: white; font-size: small;margin-left: 37%;margin-top: 2%;">OUR PROCESS</p>
+        <p style="color: white; font-size: small;margin-left: 37%;margin-top: 2%;">BOOK A CONSULT</p>
+        <p style="color: white; margin-left: 33%;font-size: small;margin-top: 2%;">COPYRIGHT © 2020 BH DESIGN BUILD  •  BRANDING AND SITE DESIGN BY GREEN TIE STUDIO</p>
+         <img  src="https://images.squarespace-cdn.com/content/v1/5266f2a8e4b05199f0597be1/1581030120064-9209JUITLA0A7TC214LR/BH+Design+Build+Seal+Footer?format=300w">
+      </div>
+</body>
+</html>

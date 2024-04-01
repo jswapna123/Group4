@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&family=Roboto:wght@400;500;700&display=swap');
+
+* {
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+body {
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* Nav bar css */
+ .nav-bar{
+    width:100%;
+    height:174px;
+    background-color: #1B5A67;
+    position: absolute;
+    z-index: 1;
+   
+ }
+ .nav-bar .nav-bar-items {
+  display:flex;
+ }
+
+ /* Dropdown CSS */
+ 
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  transition-delay: 0.2s;
+}
+.dropdown .dropbtn {
+  background: transparent;
+  border: none;
+  list-style-type: none;
+  letter-spacing: 2px;
+  font-weight: 800;
+  transition-delay: 0.2s;
+  font-size: 11px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color:  #1B5A67;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  
+  
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  
+}
+
+.dropdown-content a:hover {
+  color: #fffdfdce;
+  transition-delay: 0.2s ease;
+  background-color:  #1B5A67;
+}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {
+  background-color:  #1B5A67;
+  color: #fffdfdce;
+  
+}
+
+
+/* drop down completed*/
+ .nav-bar .logo {
+    width:40%;
+    margin-left: 25px;
+ }
+ .nav-bar .logo .logo-img {
+    width:45%;
+    height:100%;
+    padding:30px 40px;
+    filter: brightness(800%);
+ }
+ .nav-bar .nav-items {
+    width:60%;
+
+ }
+ .nav-bar .nav-items .list-items {
+    display:flex;
+    flex-flow: row;
+    height:100%;
+    justify-content: end;
+    letter-spacing: 1.5px;
+    vertical-align: middle;
+    align-items: center;
+ }
+ .nav-bar .nav-items .list-items .nav-list-items {
+    list-style-type: none;
+    letter-spacing: 2px;
+    font-weight: 800;
+    padding-right: 40px;
+    font-size: 11px;
+ }
+ .nav-bar .nav-items .list-items .nav-list-items .nav-list-items-link {
+    text-decoration: none;
+    color:#fff;
+    text-transform: uppercase;
+   
+
+ }
+ .nav-bar .nav-items .list-items .nav-list-items .nav-list-items-link:hover {
+    color: #fffdfdce;
+    transition-delay: 0.2s ease;
+ }
+
+
+ /* Nav bar css end */
+        * {
+          box-sizing: border-box;
+        }
+        input[type=text], h2 {
+        width: 100%;
+        height: 120px;
+        padding: 45px 20px;
+        margin: 8px 0;
+        text-align: center;
+        display: inline-block;
+        margin-top: 13%;
+        border-radius: 4px;
+        background-color: rgb(177, 177, 245);
+        box-sizing: border-box;
+        }
+        .column {
+          float: left;
+          width: 33.33%;
+          padding: 10px;
+        }
+        .row::after {
+  content: "";
+  clear: both;
+  display: table;
+        }
+        .column1 {
+          float: left;
+          width: 33.33%;
+          padding: 10px;
+        }
+        .row1::after {
+  content: "";
+  clear: both;
+  display: table;
+        }
+        .column2 {
+          float: left;
+          width: 33.33%;
+          padding: 10px;
+        }
+        .row2::after {
+  content: "";
+  clear: both;
+  display: table;
+        }
+        .column3 {
+          float: left;
+          width: 33.33%;
+          padding: 10px;
+        }
+        .row3::after {
+  content: "";
+  clear: both;
+  display: table;
+        }
+        .column4 {
+          float: left;
+          width: 33.33%;
+          padding: 10px;
+        }
+        .row4::after {
+  content: "";
+  clear: both;
+  display: table;
+        }
+        .column5 {
+          float: left;
+          width: 33.33%;
+          padding: 10px;
+        }
+        .row5::after {
+  content: "";
+  clear: both;
+  display: table;
+        }
+        .column6 {
+          float: left;
+          width: 33.33%;
+          padding: 10px;
+        }
+        .row6::after {
+  content: "";
+  clear: both;
+  display: table;
+        }
+        input[type=text], h1 {
+         width:100%;
+    height:230px;
+        padding: 60px 20px;
+        margin: 8px 0;
+        text-align: center;
+        display: inline-block;
+       
+        border-radius: 4px;
+        background-color: rgb(138, 143, 139);
+        box-sizing: border-box;
+
+        }
+    input[type=text], p {
+        width: 100%;
+        height: 300px;
+        background-image: url(https://images.squarespace-cdn.com/content/v1/5266f2a8e4b05199f0597be1/1581114311683-E8HYJLU59WENJZBU7ALH/Services-Testimonial-Pattern.png?format=500w);
+        background-size: cover;
+        background-attachment: fixed; 
+        padding: 60px 30px;
+        margin: 8px 0;
+        text-align: left;
+        display: inline-block;
+        
+        border-radius: 4px;
+        box-sizing: border-box;
+        background-color: rgb(177,177,248);
+        font-size: x-large;
+        
+    }
+    .button{
+  background-color: white; 
+  color: black; 
+  border: 2px solid #abb4b1;
+  padding: 16px 32px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+border-radius: 8px;
+
+    }
+    .button:hover {
+  background-color: #008CBA;
+  color: white;
+    }
+
+
+</style>
+</head>
+<body>
+    <!--navbar section-->
+    <nav class="nav-bar">
+        <div class="nav-bar-items">
+           <div class="logo">
+               <a href="/Home/home.html"><img class="logo-img" src="https://images.squarespace-cdn.com/content/v1/5266f2a8e4b05199f0597be1/1580338846675-PAB38AAQZI33E2YH10GK/BH+Design+Build%2C+Pennsylvania+Design+Build+Contractor%2C+Home+Building+Remodeling+Team%2C+Top+Contractors+in+Pennsylvania%2C+Best+Westchester+Contractor%2C+Luxury+Home+Remodel+in+Morgantown+PA3.png?format=1500w" alt="Logo Image"></a>
+           </div>
+           <div class="nav-items" >
+               <ul class="list-items">
+  
+               
+                   <li class="nav-list-items"><div class="dropdown">
+                    <button class="dropbtn nav-list-items-link">services</button>
+                    <div class="dropdown-content">
+                      <a href="/Service/design.html" class="nav-list-items-link">custom homes</a>
+                      <a href="/HomeTransformation/HomeTransformation.html" class="nav-list-items-link">home transformations</a>
+                      <a href="/Kitchen/kitchen.html" class="nav-list-items-link">kitchens</a>
+                    </div>
+                  </div></li>
+                   <li class="nav-list-items"><a href="/Process/process.html" class="nav-list-items-link">process</a></li>
+                   <li class="nav-list-items"><a href="/Portfolio/portfolio.html" class="nav-list-items-link">portfolio</a></li>
+                   <li class="nav-list-items"><a href="/OurTeam/ourteam.html" class="nav-list-items-link">our team</a></li>
+                   <li class="nav-list-items"><a href="/Contact/contact.html" class="nav-list-items-link">contact</a></li>     
+               </ul>
+           </div>
+        </div>
+      </nav>
+      <!--Nav bar secrtion end-->
+    <h2>Home Transformations
+    </h2>
+<div class="row">
+  <div class="column">
+    <img src="https://images.squarespace-cdn.com/content/v1/5266f2a8e4b05199f0597be1/1664596369633-ZU66TWW7OMDW9QV7H6AA/BH+Design+Build+Pennsylvania+Best+Contractors+Award+Winning+Home+Builders+Custom+Home5442.jpg?format=500w" alt="kitchen" style="width:80%" height="80%"><br><br>
+    <figcaption style="margin-left: 27%;">ARDMORE, PA
+    </figcaption>
+  </div>
+  <div class="column">
+    <img src="https://images.squarespace-cdn.com/content/v1/5266f2a8e4b05199f0597be1/1664596736850-JHJCF5ZQGIKAHPA3ZB7J/BH+Design+Build+West+Chester+Pennsylvania+Contractor+Most+Reliable+Home+Builders+Best+Contractor9.jpg?format=500w" alt="living" style="width:80%" height="80%"><br><br>
+    <figcaption style="margin-left: 27%;">DOWNINGTOWN, PA
+
+    </figcaption>
+
+  </div>
+  <div class="column">
+    <img src="https://images.squarespace-cdn.com/content/v1/5266f2a8e4b05199f0597be1/1584159278698-4V3JQX56T0JWIDKNSSDI/BH+Design+Build%2C+Berks+Homes%2C+Berks+County+Contractor%2C+Chester+County+Design+Build+Contractor%2C+Best+Southeast+Pennsylvania+Contractor%2C+Pennsylvania+Design+Build%2C+Eagleview%2C+Covington-1.jpg?format=500w" alt="bedroom" style="width:80%" height="80%"><br><br>
+    <figcaption style="margin-left: 27%;">DOWNINGTOWN, PA
+    </figcaption> </div>
+    <br><br>
+    </div>
+    <div class="row1">
+    <div class="column1">
+        <img src="https://images.squarespace-cdn.com/content/v1/5266f2a8e4b05199f0597be1/1611007503402-WCV93WCRD217M5VUBC04/BH+Design+Build%2C+Best+Southeast+Pennsylvania+Contractor%2C+Berks+County+Contractor%2C+Chester+County+Design+Build+Contractor%2C+Pennsylvania+Design+Build%2C+Malvern+Design+Build+Contractor%2C+Chester+County+Remodeler6.jpg?format=500w" alt="outside" style="width:80%" height="80%"><br><br>
+        <figcaption style="margin-left: 27%;">MALVERN, PA
+            </figcaption>
+        </div>
+        <div class="column1">
+            <img src="https://images.squarespace-cdn.com/content/v1/5266f2a8e4b05199f0597be1/1584159495257-PTYFQ31SIBVZZX7F0YPT/BH+Design+Build%2C+Berks+Homes%2C+Berks+County+Contractor%2C+Chester+County+Design+Build+Contractor%2C+Best+Southeast+Pennsylvania+Contractor%2C+Pennsylvania+Design+Build%2C+Eagleview%2C+Covington441-HDR%285%29.jpg?format=500w" alt="outside" style="width:80%" height="80%"><br><br>
+            <figcaption style="margin-left: 27%;">MOHNTON, PA
+                </figcaption>
+        </div>        
+        <div class="column1">
+            <img src="https://images.squarespace-cdn.com/content/v1/5266f2a8e4b05199f0597be1/1584159553741-PXCYXASE2LFNA44SNHBW/BH+Design+Build%2C+Berks+Homes%2C+Berks+County+Contractor%2C+Chester+County+Design+Build+Contractor%2C+Best+Southeast+Pennsylvania+Contractor%2C+Pennsylvania+Design+Build%2C+Eagleview%2C+Covington08-HDR%285%29.jpg?format=500w" alt="outside" style="width:80%" height="80%"><br><br>
+            <figcaption style="margin-left: 27%;">MOHNTON, PA
+                </figcaption>
+        </div>        
+</div>
+</div>
+<br>
+<br>
+<h2>Custom Homes
+</h2>
+<div class="row2">
+    <div class="column2">
+      <img src="https://images.squarespace-cdn.com/content/v1/5266f2a8e4b05199f0597be1/1611007015367-JXFC8E1IODMXPYE3SDO8/Top+Contractors+in+Chester+County%2C+Kitchen+Renovations%2C+Basement+Remodels%2C+BH+Design+Build%2C+Berks+Homes%2C+Wayne+Design+Build+Contractor%2C+Chester+County+Builder%2C+Custom+Homes1.jpg?format=500w" alt="home" style="width:80%" height="80%"><br><br>
+      <figcaption style="margin-left: 27%;">WEST CHESTER, PA
+
+      </figcaption></div>  
+      <div class="column2">
+        <img src="https://images.squarespace-cdn.com/content/v1/5266f2a8e4b05199f0597be1/1584159111460-75GV1W7AUEXGHOQYCZNU/BerksHomesWyomissing-7+copy.jpg?format=500w" alt="pool" style="width:80%" height="80%"><br><br>
+        <figcaption style="margin-left: 27%;">WYOMISSING, PA
+
+        </figcaption></div>   
+</div>
+<h2>Kitchens
+</h2>
+<div class="row2">
+    <div class="column2">
+      <img src="https://images.squarespace-cdn.com/content/v1/5266f2a8e4b05199f0597be1/1584227216318-PXEZXSRVMR91F9G6JPU0/BH+Design+Build%2C+Berks+Homes%2C+Berks+County+Contractor%2C+Chester+County+Design+Build+Contractor%2C+Best+Southeast+Pennsylvania+Contractor%2C+Pennsylvania+Design+Build%2C+Eagleview%2C+Covington8904.jpg?format=500w" alt="kitchen" style="width:80%" height="80%"><br><br>
+      <figcaption style="margin-left: 27%;">WEST CHESTER, PA
+
+      </figcaption></div>  
+      <div class="column2">
+        <img src="https://images.squarespace-cdn.com/content/v1/5266f2a8e4b05199f0597be1/1664598616793-3UPQCVQCFPLV6AYX3ML4/BH+Design+Build+West+Chester+Pennsylvania+Contractor+Most+Reliable+Home+Builders+Best+Contractor7918.jpg?format=300w" alt="kitchen" style="width:80%" height="220px"><br><br>
+        <figcaption style="margin-left: 27%;">WYOMISSING, PA
+
+        </figcaption></div>  
+        <div class="column2">
+            <img src="https://images.squarespace-cdn.com/content/v1/5266f2a8e4b05199f0597be1/1664598841241-NX3EJASYKR3RJEELK5LP/BH+Design+Build+Downington+Pennsylvania+Wayne+PA+Contractor+Builders+Renovation1734.jpg?format=500w" alt="kitchen" style="width:80%" height="80%"><br><br>
+            <figcaption style="margin-left: 27%;">WAYNE, PA
+     
+</div>
+<br>
+<br>
+<br>
+
+<h2>Home Additions
+</h2>
+<body class="row3">
+    <div class="column3">
+      <img src="https://images.squarespace-cdn.com/content/v1/5266f2a8e4b05199f0597be1/1597792487184-61WOXYQLBUKRAMG3UPLD/Top%2BContractors%2Bin%2BChester%2BCounty%2C%2BKitchen%2BRenovations%2C%2BBasement%2BRemodels%2C%2BBH%2BDesign%2BBuild%2C%2BBerks%2BHomes%2C%2BWayne%2BDesign%2BBuild%2BContractor%2C%2BChester%2BCounty%2BBuilder%2C%2BCustom%2BHomes%2C%2BFinished%2BBasements%2C%2BWest%2BChester%2BDesign%2BBuild%2BContractor.jpg?format=500w" alt="home" style="width:80%" height="80%"><br><br>
+      <figcaption style="margin-left: 27%;">MALVERN, PA
+
+
+      </figcaption></div>  
+      <div class="column3">
+        <img src="https://images.squarespace-cdn.com/content/v1/5266f2a8e4b05199f0597be1/1584160175300-RRCJGYTIVILB3UHRMHGW/Ackerman_Portfolio+Pics_05-31-17+%2822%29.jpg?format=500w" alt="home" style="width:80%" height="80%"><br><br>
+        <figcaption style="margin-left: 27%;">BERWYN, PA
+        </figcaption></div> 
+
+        <div class="column3">
+            <img src="https://images.squarespace-cdn.com/content/v1/5266f2a8e4b05199f0597be1/1584160228136-PCDF12B5V513C9Z9V2B1/Best+Southeast+Pennsylvania+Contractor%2C+Pennsylvania+Design+Build%2C+Top+Contractors+in+Chester+County%2C+Kitchen+Renovations%2C+Basement+Remodels%2C+Custom+Homes%2C+Finished+Basements%2C+5.jpg?format=500w" alt="home" style="width:80%" height="80%"><br><br>
+            <figcaption style="margin-left: 27%;">EXETER, PA 
+            </figcaption>
+        </div>
+<br>
+<br>
+<br>
+        <h2>Finished Basements
+        </h2>
+        <div class="row4">
+            <div class="column4">
+              <img src="https://images.squarespace-cdn.com/content/v1/5266f2a8e4b05199f0597be1/1584224197260-QMBYPLVFNQ7HI5AUA9UZ/BH+Design+Build%2C+Berks+Homes%2C+Berks+County+Contractor%2C+Chester+County+Design+Build+Contractor%2C+Best+Southeast+Pennsylvania+Contractor%2C+Pennsylvania+Design+Build2.jpg?format=500w" alt="home" style="width:80%" height="80%"><br><br>
+              <figcaption style="margin-left: 27%;">FADDIS CONCRETE OFFICE
+              </figcaption></div>  
+              <div class="column4">
+                <img src="https://images.squarespace-cdn.com/content/v1/5266f2a8e4b05199f0597be1/1584224239497-8ZT6I0B8X3SF1TIGRN9X/BH+Design+Build+Berks+Homes+Berks+County%2C+West+Chester%2C+Southest+Pennsylvania+Contractor%2C+Pennsylvania+Design+Build+Team%2C+Top+Contractors+in+SE+Pennsylvania+Ellis+Basement.jpg?format=500w" alt="home" style="width:80%" height="80%"><br><br>
+                <figcaption style="margin-left: 27%;">USA KILTS
+                </figcaption></div>  
+                <div class="column4">
+                    <img src="https://images.squarespace-cdn.com/content/v1/5266f2a8e4b05199f0597be1/1584224748105-M0JG0V3J1RMSRG3IHC7P/*Custom+Homes%2C+Finished+Basements%2C+West+Chester+Design+Build+Contractor%2C+Malvern+Design+Build+Contractor%2C+Wayne+Design+Build+Contractor%2C+Chester+County+Builder%2C+Chester+County+Remodeler.jpg?format=500w" alt="home" style="width:80%" height="80%"><br><br>
+                    <figcaption style="margin-left: 27%;">LUTZ FUNERAL HOME
+                    </figcaption>
+                </div>
+                <br>
+                <br>
+                <br>
+                <h2>Specialty
+                </h2>
+            <div class="row5">
+              <div class="column5">
+                <img src="https://images.squarespace-cdn.com/content/v1/5266f2a8e4b05199f0597be1/1584228140892-OHXQVCLDJYTRCLTZ8OI7/West+Chester+Design+Build+Contractor%2C+Malvern+Design+Build+Contractor%2C+Wayne+Design+Build+Contractor%2C+Chester+County+Builder%2C+Chester+County+Remodeler767-HDR%285%29.jpg?format=500w" alt="kitchen" style="width:80%" height="80%"><br><br>
+                <figcaption style="margin-left: 27%;">MOHNTON, PA
+            
+                </figcaption>
+              </div>
+              <div class="column5">
+                <img src="https://images.squarespace-cdn.com/content/v1/5266f2a8e4b05199f0597be1/1584228078480-YC8Z9BHONUNQGFGFCWT5/BH+Design+Build%2C+Berks+Homes%2C+Berks+County+Contractor%2C+Chester+County+Design+Build+Contractor%2C+Best+Southeast+Pennsylvania+Contractor%2C+Pennsylvania+Design+Build4.jpg?format=500w" alt="living" style="width:80%" height="80%"><br><br>
+                <figcaption style="margin-left: 27%;">DOWNINGTOWN, PA
+            
+                </figcaption>
+            
+              </div>
+              <div class="column5">
+                <img src="https://images.squarespace-cdn.com/content/v1/5266f2a8e4b05199f0597be1/1584228018043-6RE7EMTN6WUF09CLDYIG/West+Chester+Design+Build+Contractor%2C+Malvern+Design+Build+Contractor%2C+Wayne+Design+Build+Contractor%2C+Chester+County+Builder%2C+Chester+County+Remodeler637-HDR%285%29.jpg?format=500w" alt="bedroom" style="width:80%" height="80%"><br><br>
+                <figcaption style="margin-left: 27%;">MOHNTON, PA
+                </figcaption> </div>
+                <br><br>
+                </div>
+                <div class="row6">
+                <div class="column6">
+                    <img src="https://images.squarespace-cdn.com/content/v1/5266f2a8e4b05199f0597be1/1584228140439-ZO8GH3HCWSF43RRUBQX2/West+Chester+Design+Build+Contractor%2C+Malvern+Design+Build+Contractor%2C+Wayne+Design+Build+Contractor%2C+Chester+County+Builder%2C+Chester+County+Remodeler772-HDR%285%29.jpg?format=500w" alt="outside" style="width:80%" height="80%"><br><br>
+                    <figcaption style="margin-left: 27%;">DOWNINGTOWN, PA
+                        </figcaption>
+                    </div>
+                    <div class="column6">
+                        <img src="https://images.squarespace-cdn.com/content/v1/5266f2a8e4b05199f0597be1/1584228078397-NYIBO2KLGUU841VGODLV/BH+Design+Build%2C+Berks+Homes%2C+Berks+County+Contractor%2C+Chester+County+Design+Build+Contractor%2C+Best+Southeast+Pennsylvania+Contractor%2C+Pennsylvania+Design+Build490.jpg?format=750w" alt="outside" style="width:80%" height="220px"><br><br>
+                        <figcaption style="margin-left: 27%;">DOWNINGTOWN, PA
+                            </figcaption>
+                    </div>        
+            </div>
+            </div>
+            <br>
+            <br>
+            <br>
+<br>
+      <h1>Let us help you love more<br><br>
+        <button class="button">SCHEDULE A CONSULT</button>
+      </h1>
+    <p>“BH Design Build is a wonderful company. They offer a professional and<br> complete service, their quality is great, and their prices are really fair. We got <br>three quotes and they were the lowest and the most professional - offering artist <br>renderings of the completed project, a design center to choose all finishes, were<br> well-dressed and well-spoken, and understood and addressed all our concerns. <br>We’ve used them for several projects and completely trust their work. ” <br><br>-ROCKY </p>
+    <br>
+    <br>
+
+    
+        </body>
+</html>
